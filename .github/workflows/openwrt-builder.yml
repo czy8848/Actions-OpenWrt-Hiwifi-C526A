@@ -87,7 +87,6 @@ jobs:
         cd openwrt
         make defconfig
         make download -j8
-        cp -R openwrt/build_dir/target-arm_cortex-a7+neon-vfpv4_musl_eabi/linux-ipq40xx/linux-5.4.254 openwrt/build_dir/target-arm_cortex-a7+neon-vfpv4_musl_eabi/linux-ipq40xx/linux-5.4.255
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
